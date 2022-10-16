@@ -1,5 +1,6 @@
 # Multichat
 Shares messages between streaming services (youtube, trovo).
+
 Example 1:
 - YouTube User "Guest" sends message "Hello world"
 - Application shows this message and resends it to Trovo chat
