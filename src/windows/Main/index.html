@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Trovo ❤️ YouTube</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<div class="app">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="display: none;"
+  >
+    <g id="chat">
+      <path
+        d="M20.4469 0H0.551761C0.248292 0 0 0.258697 0 0.574883V14.3922C0 14.7098 0.249672 14.97 0.551761 14.97H4.97412V18.4221C4.97412 18.9438 5.56588 19.1882 5.91625 18.8317L9.66822 14.9685H20.4469C20.7517 14.9685 21 14.707 21 14.3908V0.574883C21 0.25726 20.7517 0 20.4469 0ZM19.8951 13.8173H9.44062C9.2944 13.8173 9.15646 13.8791 9.05163 13.9855L6.07902 17.0453V14.3922C6.07902 14.0775 5.83073 13.8173 5.52588 13.8173H1.1049V1.14977H19.8951V13.8173Z"
+        fill="currentColor"
+        fill-opacity="0.75"
+      />
+    </g>
+  </svg>
+  <div class="app__header">
+    <div class="providers"></div>
+  </div>
+  <div class="app__chat">
+    <div id="anchor"></div>
+  </div>
+  <form class="app__form">
+    <input type="text" class="app__chat-input field" placeholder="ChatMessage"/>
+    <button class="message-button button button_round">
+      <svg viewBox="0 0 21 19" class="button__icon icon-chat">
+        <use xlink:href="#chat"></use>
+      </svg>
+    </button>
+  </form>
+</div>
+<script src="./components/ChatMessage.js"></script>
+<script src='./renderer.js'></script>
+</body>
+</html>

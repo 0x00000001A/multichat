@@ -1,0 +1,26 @@
+{
+  "trovo": {
+    "scopes": [
+      "channel_details_self",
+      "channel_update_self",
+      "user_details_self",
+      "chat_connect",
+      "chat_send_self",
+      "manage_messages",
+      "send_to_my_channel"
+    ],
+    "clientId": "CLIENT_ID",
+    "secretKey": "SECRET_KEY",
+    "redirectUrl": "REDIRECT_URL"
+  },
+  "youtube": {
+    "scopes": [
+      "https://www.googleapis.com/auth/youtube",
+      "https://www.googleapis.com/auth/youtube.readonly",
+      "https://www.googleapis.com/auth/youtube.force-ssl"
+    ],
+    "clientId": "CLIENT_ID",
+    "secretKey": "SECRET_KEY",
+    "redirectUrl": "REDIRECT_URL"
+  }
+}
