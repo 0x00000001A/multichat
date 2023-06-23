@@ -40,10 +40,7 @@ class WebSocketService {
     Logger.info(message)
 
     this.#clients.forEach((client) => {
-      client.sendMessage({
-        type: 'MESSAGE',
-        message
-      })
+      client.sendMessage(JSON.stringify(message))
     })
   }
 
@@ -74,7 +71,7 @@ class WebSocketService {
   handleWSServerPeerMessage(connection, message) {
     switch (message.type) {
       case 'PING':
-        this.sendMessage({type: 'PING', message})
+        this.sendMessage(message)
         break
       default:
         Logger.warning('unsupported peer message type', message.type)

@@ -129,9 +129,9 @@ class YouTubeProvider extends ChatEntity {
 
     this.chatNextPage = chat.nextPageToken
 
-    if (!previousPage) {
-      return Promise.resolve([])
-    }
+    // if (!previousPage) {
+    //   return Promise.resolve([])
+    // }
 
     newMessages.forEach((message) => {
       const isMyMessage = message.authorDetails.isChatOwner

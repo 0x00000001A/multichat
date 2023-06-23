@@ -95,7 +95,7 @@ function connectToWSService() {
     const response = JSON.parse(event.data)
     const message = response.message
 
-    if (response.type === 'MSG') {
+    if (response.type === 'MESSAGE') {
       renderChatMessage(message.provider, message.author, message.content)
     }
   }

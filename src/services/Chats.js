@@ -159,7 +159,10 @@ class ChatsService {
           })
           .catch(Logger.error)
 
-        this.wsService.sendMessage(message)
+        this.wsService.sendMessage({
+          type: 'MESSAGE',
+          message
+        })
       }
     })
   }
